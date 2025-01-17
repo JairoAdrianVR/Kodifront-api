@@ -6,7 +6,7 @@ const router = express.Router();
 // Obtener todas las tareas
 router.get('/', (req, res) => {
   const tasks = readTasks();
-  res.json({count: tasks.length , data: tasks});
+  res.json(tasks);
 });
 
 // Crear una nueva tarea
